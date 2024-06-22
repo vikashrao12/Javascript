@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+    
+</head>
+<body>
+    <h1 id="res"></h1>
+    <button onclick="pop()">Pop</button>
+    <button onclick="push()">push</button>
+    
+</body>
+<script>
+
+    var fruits = ["mango", "apple","orange"];
+    var demo = fruits;
+    document.getElementById('res').innerText=demo;
+    function pop(){
+        demo.pop();
+        document.getElementById('res').innerText=demo;
+    }
+    function push(){
+        var x = prompt("please enter the fruit")
+        demo.push(x);
+        document.getElementById('res').innerText=demo;
+    }
+        
+</script>
+</html>
